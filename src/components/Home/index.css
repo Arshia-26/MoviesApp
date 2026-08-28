@@ -1,0 +1,126 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.hero-section {
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.hero-content button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.movie-section {
+  padding: 35px 40px;
+}
+
+.movie-section h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.movie-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.movie-list::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-list a {
+  flex-shrink: 0;
+}
+
+.movie-poster {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+}
+
+.failure-container {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.failure-image {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.failure-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.failure-container button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 400px;
+    padding: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .movie-section {
+    padding: 25px 20px;
+  }
+
+  .movie-poster {
+    width: 140px;
+    height: 210px;
+  }
+}
